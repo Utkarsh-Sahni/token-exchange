@@ -49,7 +49,7 @@ export const loadToken = async (web3, networkId, dispatch) => {
     dispatch(tokenLoaded(token))
     return token
   } catch (error) {
-    console.log('Contract not deployed to the current network. Please select another network with Metamask.')
+    console.log('The Contract is currently eployed on Kovan Test Network. Please select Kovan Test Network from Metamask.')
     return null
   }
 }
@@ -60,7 +60,7 @@ export const loadExchange = async (web3, networkId, dispatch) => {
     dispatch(exchangeLoaded(exchange))
     return exchange
   } catch (error) {
-    console.log('Contract not deployed to the current network. Please select another network with Metamask.')
+    console.log('The Contract is currently eployed on Kovan Test Network. Please select Kovan Test Network from Metamask.')
     return null
   }
 }
